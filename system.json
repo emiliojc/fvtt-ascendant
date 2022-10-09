@@ -1,0 +1,35 @@
+{
+  "id": "ascendant",
+  "version": "0.0.1",
+  "title": "Ascendant",
+  "url": "",
+  "description": "A rudimentary implementation of Ascendant for Foundry VTT, based entirely on the Simple Worldbuilding system for Foundry designed by Atropos.",
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "Atropos",
+      "url": "https://foundryvtt.com"
+    }
+  ],
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.282",
+    "maximum": "10"
+  },
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "manifest": "",
+  "download": ""
+}
