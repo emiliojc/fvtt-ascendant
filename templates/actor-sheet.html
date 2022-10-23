@@ -8,20 +8,41 @@
                 <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
             </h1>
             <div class="resource">
-                <input type="number" name="system.health.value" value="{{systemData.health.value}}"/>
+                <h4>Health</h4>
+                <input type="number" name="system.variable.health.value" value="{{systemData.variable.health.value}}"/>
                 <span> / </span>
-                <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
+                <input type="number" name="system.variable.health.max" value="{{systemData.variable.health.max}}"/>
             </div>
             <div class="resource">
-                <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
+                <h4>Determination</h4>
+                <input type="number" name="system.variable.determination.value" value="{{systemData.variable.determination.value}}"/>
                 <span> / </span>
-                <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
+                <input type="number" name="system.variable.determination.max" value="{{systemData.variable.determination.max}}"/>
+            </div>
+            <div class="resource">
+                <h4>Hero Point</h4>
+                <input type="number" name="system.heroPoints.value" value="{{systemData.variable.determination.value}}"/>
+                <span> / </span>
+                <input type="number" name="system.heroPoints.max" value="{{systemData.variable.determination.max}}"/>
             </div>
         </div>
     </header>
 
+    <section class="sheet-attr">
+        <div class="primary-attr">
+            {{#each data.system.primary as |primaryAttr key|}}
+            <div class="attr">
+                <h4>{{upper @key}} {{primaryAttr.label}}</h4>
+                <input type="number" name="system.primary.{{@key}}.value" value="{{primaryAttr.value}}">
+                <i class="fa fa-dice"></i>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="combat">Combat Stats</a>
         <a class="item" data-tab="description">Description</a>
         <a class="item" data-tab="items">Items</a>
         <a class="item" data-tab="attributes">Attributes</a>
@@ -32,6 +53,14 @@
 
         {{!-- Biography Tab --}}
         <div class="tab description" data-group="primary" data-tab="description">
+            <div class="secondary-attr">
+                {{#each data.system.secondary as |secondaryAttr key|}}
+                <div class="attr">
+                    <h4>{{secondaryAttr.label}}</h4>
+                    <input type="number" name="system.secondary.{{@key}}.value" value="{{secondaryAttr.value}}">
+                </div>
+                {{/each}}
+            </div>
             {{editor biographyHTML target="system.biography" button=true editable=editable engine="prosemirror"}}
         </div>
 

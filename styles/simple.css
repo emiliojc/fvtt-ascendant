@@ -1,18 +1,18 @@
-.worldbuilding {
+.ascendant {
   /* Sheet Tabs */
   /* Items List */
   /* Attributes */
 }
-.worldbuilding .window-content {
+.ascendant .window-content {
   height: 100%;
   padding: 5px;
   overflow-y: hidden;
 }
-.worldbuilding form {
+.ascendant form {
   height: 100%;
 }
-.worldbuilding .sheet-header {
-  flex: 0 0 100px;
+.ascendant .sheet-header {
+  flex: 0 0 125px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -20,85 +20,85 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.worldbuilding .sheet-header .profile-img {
-  flex: 0 0 100px;
-  height: 100px;
+.ascendant .sheet-header .profile-img {
+  flex: 0 0 125px;
+  height: 125px;
   margin-right: 10px;
 }
-.worldbuilding .sheet-header .header-fields {
+.ascendant .sheet-header .header-fields {
   flex: 1;
-  height: 100px;
+  height: 125px;
 }
-.worldbuilding .sheet-header h1.charname {
+.ascendant .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.worldbuilding .sheet-header h1.charname input {
+.ascendant .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.worldbuilding .resource {
-  width: 50%;
+.ascendant .resource {
+  width: 33%;
   height: 40px;
   margin-top: 10px;
   float: left;
   text-align: center;
 }
-.worldbuilding .resource input {
-  width: 100px;
+.ascendant .resource input {
+  width: 60px;
   height: 28px;
 }
-.worldbuilding .tabs {
+.ascendant .tabs {
   flex: 0 0 40px;
   border-top: 1px solid #AAA;
   border-bottom: 1px solid #AAA;
 }
-.worldbuilding .tabs .item {
+.ascendant .tabs .item {
   line-height: 40px;
   font-weight: bold;
 }
-.worldbuilding .tabs .item.active {
+.ascendant .tabs .item.active {
   text-decoration: underline;
   text-shadow: none;
 }
-.worldbuilding .sheet-body {
+.ascendant .sheet-body {
   overflow: hidden;
 }
-.worldbuilding .sheet-body .tab {
+.ascendant .sheet-body .tab {
   height: 100%;
   overflow-y: auto;
 }
-.worldbuilding .editor,
-.worldbuilding .editor-content {
+.ascendant .editor,
+.ascendant .editor-content {
   height: 100%;
 }
-.worldbuilding .item-list {
+.ascendant .item-list {
   list-style: none;
   margin: 7px 0;
   padding: 0;
   overflow-y: auto;
 }
-.worldbuilding .item-list .item {
+.ascendant .item-list .item {
   min-height: 30px;
   line-height: 24px;
   padding: 3px 0;
   border-bottom: 1px solid #BBB;
   align-items: stretch;
 }
-.worldbuilding .item-list .item img {
+.ascendant .item-list .item img {
   flex: 0 0 24px;
   margin-right: 5px;
 }
-.worldbuilding .item-list .item-name {
+.ascendant .item-list .item-name {
   margin: 0;
 }
-.worldbuilding .item-list .item-controls {
+.ascendant .item-list .item-controls {
   flex: 0 0 36px;
 }
-.worldbuilding .item-list .item-buttons {
+.ascendant .item-list .item-buttons {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -106,23 +106,23 @@
   flex: 2;
   justify-content: flex-start;
 }
-.worldbuilding .item-list .item-button {
+.ascendant .item-list .item-button {
   line-height: 1;
   font-size: 11px;
   flex: none;
   width: auto;
 }
-.worldbuilding .attributes {
+.ascendant .attributes {
   position: relative;
 }
-.worldbuilding .attributes .attribute-control,
-.worldbuilding .attributes .group-control {
+.ascendant .attributes .attribute-control,
+.ascendant .attributes .group-control {
   flex: 0 0 20px;
   text-align: center;
   line-height: 28px;
   border: none;
 }
-.worldbuilding .attributes .attribute-roll {
+.ascendant .attributes .attribute-roll {
   flex: 0 0 20px;
   text-align: center;
   border-bottom: none;
@@ -130,11 +130,11 @@
   align-items: center;
   justify-content: center;
 }
-.worldbuilding .attributes .group-prefix {
+.ascendant .attributes .group-prefix {
   height: 31px;
   margin-right: 10px;
 }
-.worldbuilding .attributes .button {
+.ascendant .attributes .button {
   width: 100%;
   flex: 1;
   margin: 0;
@@ -145,11 +145,11 @@
   line-height: 28px;
   display: block;
 }
-.worldbuilding .attributes .attribute-key {
+.ascendant .attributes .attribute-key {
   background: transparent;
   border: none;
 }
-.worldbuilding .attributes-header {
+.ascendant .attributes-header {
   position: sticky;
   top: 0;
   left: 0;
@@ -162,12 +162,12 @@
   text-align: left;
   font-weight: bold;
 }
-.worldbuilding .attributes-list {
+.ascendant .attributes-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.worldbuilding .attributes-list li > * {
+.ascendant .attributes-list li > * {
   margin: 0 3px;
   height: 28px;
   line-height: 24px;
@@ -176,47 +176,47 @@
   border-radius: 0;
   border-bottom: 1px solid #AAA;
 }
-.worldbuilding .attributes-list .attribute-col label {
+.ascendant .attributes-list .attribute-col label {
   font-size: 10px;
   text-align: center;
   line-height: 1;
 }
-.worldbuilding .attributes-list .attribute-col input {
+.ascendant .attributes-list .attribute-col input {
   font-size: 11px;
   text-align: center;
   line-height: 1;
   height: 50%;
 }
-.worldbuilding .attribute input[type="text"]::placeholder,
-.worldbuilding .group-header input[type="text"]::placeholder {
+.ascendant .attribute input[type="text"]::placeholder,
+.ascendant .group-header input[type="text"]::placeholder {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
-.worldbuilding .attribute input[type="text"]:focus::placeholder,
-.worldbuilding .group-header input[type="text"]:focus::placeholder {
+.ascendant .attribute input[type="text"]:focus::placeholder,
+.ascendant .group-header input[type="text"]:focus::placeholder {
   opacity: 1;
 }
-.worldbuilding .group-controls {
+.ascendant .group-controls {
   margin: 5px;
 }
-.worldbuilding .groups-list {
+.ascendant .groups-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.worldbuilding .group {
+.ascendant .group {
   margin: 5px 0 0;
   padding: 0;
 }
-.worldbuilding .group-header {
+.ascendant .group-header {
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid #AAA;
   border-radius: 2px;
   padding: 2px 5px;
 }
-.worldbuilding .group-key,
-.worldbuilding .group-label {
+.ascendant .group-key,
+.ascendant .group-label {
   font-weight: bold;
   border: none;
   border-bottom: 1px solid #AAA;
@@ -224,22 +224,40 @@
   border-radius: 0;
   margin-right: 6px;
 }
-.worldbuilding .group-key {
+.ascendant .group-key {
   opacity: 0.75;
 }
-.worldbuilding .group-label {
+.ascendant .group-label {
   flex: 2;
 }
-.worldbuilding .group-dtype {
+.ascendant .group-dtype {
   height: 24px;
   flex: 0 0 116px;
   margin: 0 5px;
 }
-.worldbuilding.sheet.actor {
+.ascendant.sheet.actor {
   min-width: 560px;
   min-height: 420px;
 }
-.worldbuilding.sheet.item {
+.ascendant.sheet.item {
   min-width: 460px;
   min-height: 400px;
+}
+
+.attr {
+  width: 15%;
+  margin-right: 5px;
+}
+
+.attr i {
+  margin-top: 5px;
+}
+
+.primary-attr, .secondary-attr {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
 }
