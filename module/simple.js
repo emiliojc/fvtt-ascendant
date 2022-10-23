@@ -7,10 +7,13 @@
 import { SimpleActor } from "./actor.js";
 import { SimpleItem } from "./item.js";
 import { SimpleItemSheet } from "./item-sheet.js";
-import { SimpleActorSheet } from "./actor-sheet.js";
 import { preloadHandlebarsTemplates } from "./templates.js";
 import { createWorldbuildingMacro } from "./macro.js";
 import { SimpleToken, SimpleTokenDocument } from "./token.js";
+// Ascendant specific modules
+import { AscendantActor } from "./ascendant-actor.js";
+import { AscendantActorSheet } from "./ascendant-actor-sheet.js";
+import ASCENDANT from "./constants.js";
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -27,7 +30,7 @@ Hooks.once("init", async function() {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "1d20",
+    formula: "1d10",
     decimals: 2
   };
 
@@ -36,15 +39,18 @@ Hooks.once("init", async function() {
     createWorldbuildingMacro
   };
 
+  // Record configuration values
+  CONFIG.ASCENDANT = ASCENDANT;
+
   // Define custom Document classes
-  CONFIG.Actor.documentClass = SimpleActor;
+  CONFIG.Actor.documentClass = AscendantActor;
   CONFIG.Item.documentClass = SimpleItem;
   CONFIG.Token.documentClass = SimpleTokenDocument;
   CONFIG.Token.objectClass = SimpleToken;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("worldbuilding", SimpleActorSheet, { makeDefault: true });
+  Actors.registerSheet("ascendant", AscendantActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("worldbuilding", SimpleItemSheet, { makeDefault: true });
 
@@ -92,6 +98,10 @@ Hooks.once("init", async function() {
    */
   Handlebars.registerHelper('slugify', function(value) {
     return value.slugify({strict: true});
+  });
+
+  Handlebars.registerHelper('upper', function(value) {
+    return value.toUpperCase();
   });
 
   // Preload template partials

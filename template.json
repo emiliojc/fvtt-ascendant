@@ -1,7 +1,7 @@
 {
   "Actor": {
     "types": [
-      "character", "object"
+      "character"
     ],
     "templates":{
       "background": {
@@ -51,12 +51,12 @@
             "label": "Weight",
             "modifier": []
           },
-          "run_speed": {
+          "runSpeed": {
             "value": 0,
             "label": "Running Speed",
             "modifier": []
           },
-          "jump_speed": {
+          "jumpSpeed": {
             "value": 0,
             "label": "Jumping Speed",
             "modifier": []
@@ -64,11 +64,6 @@
           "carry": {
             "value": 0,
             "label": "Carrying Capacity",
-            "modifier": []
-          },
-          "initiative": {
-            "value": 0,
-            "label": "Initiative",
             "modifier": []
           },
           "income": {
@@ -81,12 +76,12 @@
             "label": "Reputation",
             "modifier": []
           },
-          "spot_range": {
+          "spotRange": {
             "value": 0,
             "label": "Passive Spot Range",
             "modifier": []
           },
-          "listen_range": {
+          "listenRange": {
             "value": 0,
             "label": "Passive Listening Range",
             "modifier": []
@@ -97,127 +92,135 @@
             "value": 10,
             "min": 0,
             "max": 10,
+            "label": "Health",
             "modifier": []
           },
           "determination": {
             "value": 10,
             "min": 0,
             "max": 10,
+            "label": "Determination",
             "modifier": []
           }
-        }
-      },
-      "hero_points": {
-        "value": 0,
-        "min": 0,
-        "max": 0
-      },
-      "combat_attrs": {
-        "melee": {
-          "av": {
-            "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
-          },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
-          },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
-          }
         },
-        "ranged": {
-          "av": {
-            "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
-          },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
-          },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
-          }
+        "heroPoints": {
+          "value": 0,
+          "min": 0,
+          "max": 0
         },
-        "wrestling": {
-          "av": {
+        "combat": {
+          "initiative": {
             "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
+            "label": "Initiative",
+            "modifier": []
           },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
+          "melee": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
-          }
-        },
-        "ramming": {
-          "av": {
-            "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
+          "ranged": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
+          "wrestling": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
-          }
-        },
-        "mental": {
-          "av": {
-            "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
+          "ramming": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
+          "mental": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
-          }
-        },
-        "emotional": {
-          "av": {
-            "value": 0,
-            "label": "Acting Value",
-            "modifiers": []
-          },
-          "ev": {
-            "value": 0,
-            "label": "Effect Value",
-            "modifiers": []
-          },
-          "dv": {
-            "value": 0,
-            "label": "Difficulty Value",
-            "modifiers": []
+          "emotional": {
+            "av": {
+              "value": 0,
+              "label": "Acting Value",
+              "modifiers": []
+            },
+            "ev": {
+              "value": 0,
+              "label": "Effect Value",
+              "modifiers": []
+            },
+            "dv": {
+              "value": 0,
+              "label": "Difficulty Value",
+              "modifiers": []
+            }
           }
         }
       }
     },
     "character": {
+      "templates": ["background", "attributes"]
     }
   },
   "Item": {
